@@ -72,13 +72,13 @@
           </div>
         </div>
       </div>
-      <div class="add-icon" id="add" onclick="openModal()">
+      <div class="add-icon" id="add">
         <img src="./img/plus-icon.png" alt="" />
       </div>
     </div>
 
     <!-- for add list pop up -->
-    <div class="modal" id="modal">
+    <div class="modal" id="openModal">
       <div class="modal__heading">
         <h4>New note</h4>
         <div class="header__search">
@@ -86,13 +86,13 @@
         </div>
       </div>
       <div class="btns">
-        <button class="btns__cancel" id="closeModal" onclick="cancel">
+        <button class="btns__cancel" id="cancelModal" onclick="cancel">
           Cancel
         </button>
         <button class="btns__apply" id="apply">Apply</button>
       </div>
     </div>
-    <div class="overlay hidden" id="closeOverlay"></div>
+    <div class="overlay hidden" id="hidden"></div>
 
     <script src="script.js"></script>
   </body>

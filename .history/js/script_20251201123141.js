@@ -8,23 +8,22 @@ function cancel() {}
 // let cancelModal = document.getElementById("cancelModal");
 
 // when button is opened
-// modal.addEventListener("click", () => {
+modal.addEventListener("click", () => {
   // open.style.display = ""
-  // modal.style.display = "block"; // show modal
-// });
+  modal.style.display = "block"; // show modal
+});
 
 // const openModal = function () {
 // console.log("Button clicked");
 // modal.classList.add("open"); //gives the list of css class in the element
 // };
 
-function openModal() {
-  const clickOpen = document.getElementById("add");
+const openModal = function () {
+  const openModal = document.getElementById("add");
   const modal = document.getElementById("modal");
-  // const closeModal = document.getElementById("cancelModal");
-  // const overlay = document.getElementById("closeOverlay");
+  const cancel = document.getElementById("cancelModal");
+  const overlay = document.getElementById("closeOverlay");
 
-  clickOpen.style.display = "block";
+  openModal.style.display = "block";
   modal.style.display = "block";
-  // cancel.style.displa
-}
+};

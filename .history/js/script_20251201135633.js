@@ -19,12 +19,11 @@ function cancel() {}
 // };
 
 function openModal() {
-  const clickOpen = document.getElementById("add");
+  const opeModal = document.getElementById("add");
   const modal = document.getElementById("modal");
-  // const closeModal = document.getElementById("cancelModal");
-  // const overlay = document.getElementById("closeOverlay");
+  const cancel = document.getElementById("cancelModal");
+  const overlay = document.getElementById("closeOverlay");
 
-  clickOpen.style.display = "block";
+  openModal.style.display = "block";
   modal.style.display = "block";
-  // cancel.style.displa
 }

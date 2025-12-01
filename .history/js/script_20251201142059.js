@@ -21,7 +21,7 @@ function cancel() {}
 function openModal() {
   const clickOpen = document.getElementById("add");
   const modal = document.getElementById("modal");
-  // const closeModal = document.getElementById("cancelModal");
+  // const cancel = document.getElementById("cancelModal");
   // const overlay = document.getElementById("closeOverlay");
 
   clickOpen.style.display = "block";
