@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do-list</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="to-do container">
+      <div class="header">
+        <h1 class="header__title">To-do List</h1>
+        <div class="header__heading-info">
+          <div class="header__search">
+            <img src="./img/search-icon.png" alt="search-icon" />
+            <input type="text" placeholder="Search note..." />
+          </div>
+          <div class="header__btns">
+            <div class="header__all-dropdown">
+              <div class="header__select-part">
+                <p>ALL</p>
+                <img src="./img/chevron-top.png" alt="" />
+              </div>
+              <div></div>
+            </div>
+            <div class="header__mode">
+              <img src="./img/mode-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty">
+        <img src="./img/empty-icon.png" alt="" />
+        <p>Empty... Add a list</p>
+      </div>
+      <div class="add-list">
+        <div class="add-list__list-item">
+          <div class="add-list__lists">
+            <div class="add-list__list-check">
+              <div>
+                <input type="checkbox" />
+              </div>
+              <p>NOTE 1</p>
+            </div>
+            <div class="add-list__edit-icons">
+              <img src="./img/edit-icon.svg" alt="" />
+              <img src="./img/delete-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="add-list__lists">
+            <div class="add-list__list-check">
+              <div>
+                <input type="checkbox" />
+              </div>
+              <p>NOTE 2</p>
+            </div>
+            <div class="add-list__edit-icons">
+              <img src="./img/edit-icon.svg" alt="" />
+              <img src="./img/delete-icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="add-list__lists">
+            <div class="add-list__list-check">
+              <label class="check">
+                <input type="checkbox" id="my-check" />
+                <span class="check__checkmark"></span>
+              </label>
+              <p>NOTE 3</p>
+            </div>
+            <div class="add-list__edit-icons">
+              <img src="./img/edit-icon.svg" alt="" />
+              <img src="./img/delete-icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="add-icon" id="add-btn" onclick="openModal()">
+        <img src="./img/plus-icon.png" alt="" />
+      </div>
+    </div>
+
+    <!-- for add list pop up -->
+    <div class="modal" id="modal">
+      <div class="modal__heading">
+        <h4>New note</h4>
+        <div class="header__search">
+          <input type="text" placeholder="Input your note" />
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btns__cancel" id="cancel-modal" onclick="closeModal()">
+          Cancel
+        </button>
+        <button class="btns__apply" id="apply">Apply</button>
+      </div>
+    </div>
+    <div class="overlay hidden" id="closeOverlay"></div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
